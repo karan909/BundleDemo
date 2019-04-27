@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/locationText"
+        android:text=""
+        android:textSize="17sp"
+        android:textAlignment="center"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/long2"
+        android:layout_marginBottom="10dp"
+        android:padding="10dp"/>
+
+
+    <EditText
+        android:inputType="numberDecimal"
+        android:id="@+id/lat2"
+        android:hint="Latitude 2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <EditText
+        android:id="@+id/long2"
+        android:hint="Longitude 2"
+        android:inputType="numberDecimal"
+        android:layout_below="@+id/lat2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Current Location"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/locationText"
+        android:padding="10dp"
+        android:id="@+id/getLocationBtn"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Distance"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/getLocationBtn"
+        android:padding="10dp"
+        android:id="@+id/getDistance"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvDistance"
+        android:text=""
+        android:textSize="17sp"
+        android:textAlignment="center"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/getDistance"
+        android:layout_marginBottom="10dp"
+        android:padding="10dp"/>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvParlour"
+        android:text=""
+        android:textSize="17sp"
+        android:textAlignment="center"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/tvDistance"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="30dp"
+        android:padding="10dp"/>
+
+
+</RelativeLayout>
